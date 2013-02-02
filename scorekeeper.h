@@ -3,8 +3,7 @@
 
 #include <QtCore/QList>
 #include "scoreentry.h"
-
-
+#include <mongo/client/dbclient.h>
 
 class QString;
 

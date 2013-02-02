@@ -11,6 +11,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = monscore
 TEMPLATE = app
 
+unix:!macx: LIBS += -lmongoclient -lboost_thread-mt -lboost_filesystem -lboost_program_options -lboost_system
+
 SOURCES += main.cpp\
         mainwindow.cpp \
     scorekeeper.cpp \
